@@ -37,7 +37,7 @@ const RealPeople = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 500,
   };
   return (
