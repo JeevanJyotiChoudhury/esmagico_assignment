@@ -14,17 +14,17 @@ import Footer from "./Footer";
 const Main = () => {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       {/* <Form /> */}
       {/* <LargestNetwork /> */}
-      <OwnSession />
+      {/* <OwnSession />
       <LearningSession />
       <LiveSession />
       <RealPeople />
-      <Clients />
-      <AboutSpeakin />
-      <TrendingSpeaker />
-      <Footer />
+      <Clients /> */}
+      {/* <AboutSpeakin /> */}
+      {/* <TrendingSpeaker />
+      <Footer /> */}
     </div>
   );
 };
