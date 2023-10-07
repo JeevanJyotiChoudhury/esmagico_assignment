@@ -17,14 +17,14 @@ const Main = () => {
       {/* <Banner /> */}
       {/* <Form /> */}
       {/* <LargestNetwork /> */}
-      {/* <OwnSession /> */}
-      <LearningSession />
+      <OwnSession />
+      {/* <LearningSession />
       <LiveSession />
       <RealPeople />
-      <Clients />
+      <Clients /> */}
       {/* <AboutSpeakin /> */}
-      <TrendingSpeaker />
-      <Footer/>
+      {/* <TrendingSpeaker />
+      <Footer/> */}
     </div>
   );
 }
