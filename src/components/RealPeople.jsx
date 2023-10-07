@@ -35,7 +35,10 @@ const RealPeople = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 500,
   };
   return (
     <Box bg="#68a0e8" pt="4" pb="24">

@@ -29,23 +29,23 @@ const arrData = [
 
 const OwnSession = () => {
   return (
-    <Box w={{ sm: "90%", md: "70%" ,xl:"50%"}} mx="auto" my="20">
-      <Heading pl="8" w="70%">
+    <Box w={{ sm: "90%", md: "70%" ,xl:"50%"}} mx="auto" mb="20" mt="28">
+      <Heading pl="8" w="70%" fontSize="5xl">
         Why Curate Your Own Sessions?
       </Heading>
       <SimpleGrid columns={{ sm: 1, md: 2 }}>
-        <Box p="8">
+        <Box p="12">
           <Image src={bgImg} />
         </Box>
         <Box px="6">
           {arrData.map((elem) => {
             return (
-              <Flex my="4" align="center">
+              <Flex my="6" align="center">
                 <Box w="10%">
                   <Image src={elem.img} />
                 </Box>
-                <Box w="80%" px="5">
-                  <Text>{elem.desc}</Text>
+                <Box w="70%" px="4">
+                  <Text fontSize="lg">{elem.desc}</Text>
                 </Box>
               </Flex>
             );

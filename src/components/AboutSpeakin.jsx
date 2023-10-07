@@ -2,7 +2,7 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import watermarkbg from "../assets/Rectangle 196wm5.png";
 import watermarkbg2 from "../assets/open-mic 1.png";
-import micbg from "../assets/Screenshot 2020-11-16 at 1.08bg.png";
+import micbg from "../assets/Screenshot_2020-11-16_at_1.08bg-removebg-preview.png";
 import mic from "../assets/unnamed 1.png";
 
 const AboutSpeakin = () => {
@@ -18,19 +18,19 @@ const AboutSpeakin = () => {
       <Box position="absolute" top="24" w="100%">
         <Flex>
           <Box
-            w="40%"
+            w="45%"
             backgroundImage={micbg}
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             backgroundPosition="center"
             h="60vh"
           >
-            <Image src={mic} objectFit="cover" />
+            <Image src={mic} w="20%"  position="absolute" bottom="1.5" left="60"/>
             {/* <Image src={mic} /> */}
           </Box>
-          <Box w="60%">
-            <Text>About SpeakIn</Text>
-            <Text>
+          <Box w="40%" mt="8%" pl="24">
+            <Text fontWeight="semibold" fontSize="5xl" my="5">About SpeakIn</Text>
+            <Text fontSize="lg" w="90%">
               SpeakIn is Asia's largest on-demand network providing access to
               top regional speakers, thought leaders and their content. Enabling
               organizations to build performance agility and win over

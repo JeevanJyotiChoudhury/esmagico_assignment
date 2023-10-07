@@ -36,27 +36,27 @@ const Form = () => {
           <Text textAlign="center" mb="8" fontSize={"xs"}>
             Submit Your Requirement
           </Text>
-          <FormControl isRequired>
+          <FormControl isRequired my="4">
             <FormLabel>Name</FormLabel>
             <Input placeholder="Enter name" />
           </FormControl>
-          <FormControl isRequired>
+          <FormControl isRequired my="4">
             <FormLabel>Email</FormLabel>
             <Input placeholder="Enter email" />
           </FormControl>
-          <FormControl isRequired>
+          <FormControl isRequired my="4">
             <FormLabel>Mobile Number</FormLabel>
             <Input placeholder="First name" />
           </FormControl>
-          <FormControl isRequired>
+          <FormControl isRequired my="4">
             <FormLabel>Organization</FormLabel>
             <Input placeholder="Enter name" />
           </FormControl>
-          <FormControl isRequired>
+          <FormControl isRequired my="4">
             <FormLabel>Select Date</FormLabel>
             <Input placeholder="DD/MM/YYYY" />
           </FormControl>
-          <Text>Topic of the Session:</Text>
+          <Text fontSize="xl" my="5" fontWeight="semibold">Topic of the Session:</Text>
           <SimpleGrid columns="2" gap="2">
             <Button leftIcon={<TiTickOutline />} borderRadius="3xl" size="sm" variant='outline'>
               Business Leadership
