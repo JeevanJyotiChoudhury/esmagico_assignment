@@ -18,13 +18,13 @@ const Main = () => {
       {/* <Form /> */}
       {/* <LargestNetwork /> */}
       {/* <OwnSession /> */}
-      {/* <LearningSession /> */}
-      {/* <LiveSession /> */}
-      {/* <RealPeople /> */}
-      {/* <Clients /> */}
+      <LearningSession />
+      <LiveSession />
+      <RealPeople />
+      <Clients />
       {/* <AboutSpeakin /> */}
-      {/* <TrendingSpeaker /> */}
-      {/* <Footer/> */}
+      <TrendingSpeaker />
+      <Footer/>
     </div>
   );
 }
