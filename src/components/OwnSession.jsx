@@ -29,7 +29,7 @@ const arrData = [
 
 const OwnSession = () => {
   return (
-    <Box w={{ sm: "90%", md: "70%" ,xl:"50%"}} mx="auto">
+    <Box w={{ sm: "90%", md: "70%" ,xl:"50%"}} mx="auto" my="20">
       <Heading pl="8" w="70%">
         Why Curate Your Own Sessions?
       </Heading>

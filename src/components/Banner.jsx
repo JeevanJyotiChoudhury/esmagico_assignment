@@ -8,7 +8,7 @@ import banner3 from "../assets/Rectangle 195wm3.png"
 const Banner = () => {
   return (
     <Box
-      position="relative"
+      position="relative" zIndex='-1'
     >
       <Image src={banner} w="100%" />
       <Image src={banner1} w="100%" position="absolute" bottom='-56'/>

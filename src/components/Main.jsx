@@ -15,16 +15,15 @@ const Main = () => {
   return (
     <div>
       <Banner />
-      {/* <Form /> */}
-      {/* <LargestNetwork /> */}
-      {/* <OwnSession />
+      <LargestNetwork />
+      <OwnSession />
       <LearningSession />
       <LiveSession />
       <RealPeople />
-      <Clients /> */}
-      {/* <AboutSpeakin /> */}
-      {/* <TrendingSpeaker />
-      <Footer /> */}
+      <Clients />
+      <AboutSpeakin />
+     <TrendingSpeaker />
+      <Footer />
     </div>
   );
 };
