@@ -39,8 +39,8 @@ const dataArray = [
 ];
 const LearningSession = () => {
   return (
-    <Box bg="#eef4fb" py="20">
-      <Box w={"80%"} mx={"auto"} h={"100%"} px={"2"}>
+    <Box bg="#eef4fb" py="20" w='100%'>
+      <Box w={{sm:"100%",md:"80%"}} mx={"auto"} px={"2"}>
         <Box>
           <Button bg="#ff8e4f" color="white">
             Trending
@@ -49,7 +49,7 @@ const LearningSession = () => {
             Live Learning Sessions
           </Heading>
         </Box>
-        <SimpleGrid columns={5} mt="10" gap="7">
+        <SimpleGrid columns={{sm:'2',md:'3',xl:'5'}} mt="10" gap="7">
           {dataArray.map((elem) => {
             return (
               <Box bg="white" borderRadius="xl">

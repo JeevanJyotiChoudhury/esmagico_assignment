@@ -39,9 +39,9 @@ const RealPeople = () => {
   };
   return (
     <Box bg="#68a0e8" pt="4" pb="24">
-      <Box w="60%" mx="auto">
-        <SimpleGrid columns="2">
-          <Box color="white" pl="16" mt="20">
+      <Box w={{base:"100%",lg:"60%"}} mx="auto" px={{base:"3",sm:"5",xl:"0"}}>
+        <SimpleGrid columns={{base:1,lg:"2"}}>
+          <Box color="white" pl={{base:"4",lg:"16"}} mt="15%">
             <Text fontSize="4xl" fontWeight="semibold" mb="-4">
               Real People
             </Text>

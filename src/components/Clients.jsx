@@ -5,7 +5,7 @@ import banner from "../assets/Screenshot 2020-11-27 at 7.16ibm.png";
 const Clients = () => {
   return (
     <Box w="100%" mt='12'>
-      <Box textAlign="center" w="31%" mx="auto">
+      <Box textAlign="center" w={{base:"60%",md:"50%",xl:"31%"}} mx="auto">
         <Box>
           <Heading as="h2">Your SpeakIn is Trusted by the Best of Clients</Heading>
         </Box>

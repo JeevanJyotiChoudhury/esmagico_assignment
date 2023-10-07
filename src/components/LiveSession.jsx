@@ -27,14 +27,14 @@ const dataArray = [
 const LiveSession = () => {
   return (
     <Box w="50%" mx="auto" textAlign="center" mb='20'>
-      <Flex fontSize="4xl" fontWeight="medium" justify="center" pt="10" pb="20">
+      <Flex fontSize={{base:"md",sm:"xl",lg:"4xl"}} fontWeight="medium" justify="center" pt="10" pb="20">
         How
         <span>
           <Text color="#4467c3">Live Sessions</Text>
         </span>
         Work?
       </Flex>
-      <SimpleGrid columns="4" gap="9">
+      <SimpleGrid columns={{sm:"1",md:"2",xl:"4"}} gap="9">
         {dataArray.map((el) => {
           return (
             <Box shadow="2xl" borderRadius="lg">

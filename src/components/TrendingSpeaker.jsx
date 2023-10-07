@@ -55,7 +55,7 @@ const TrendingSpeaker = () => {
             Trending Speakers
           </Heading>
         </Box>
-        <SimpleGrid columns={5} mt="10" gap="3">
+        <SimpleGrid columns={{base:1,md:2,xl:5}} mt="10" gap="3">
           {dataArray.map((elem) => {
             return (
               <Box borderRadius="xl">
