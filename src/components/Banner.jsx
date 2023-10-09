@@ -15,11 +15,11 @@ const Banner = () => {
       <Image src={banner1} w="100%" position="absolute" bottom="-56" />
       <Image src={banner3} w="100%" position="absolute" bottom="-72" />
       <Image src={banner2} w="100%" position="absolute" bottom="-52" />
-      <Box width="35%" position={"absolute"} right={"15%"} top="10%">
+      <Box width="45%" position={"absolute"} right={"5%"} top="10%">
         <Text
           color="white"
-          fontSize={{ sm: "xl", md: "5xl" }}
-          fontWeight={"bold"}
+          fontSize={{ sm: "xl", md: "46px" }}
+          fontWeight={"600"}
         >
           Curate Your own Training Sessions with top Keynote Speakers
         </Text>
@@ -39,10 +39,10 @@ const Banner = () => {
           <Image src={plus} width="7%" h="2%" />
           <Image src={zoom} />
         </Flex>
-        <Text color="white" fontSize={{ sm: "sm", md: "2xl" }} my={{base:"0",md:"4"}}>
+        <Text color="white" fontSize={{ sm: "sm", md: "22px" }} my={{base:"0",md:"4"}} fontWeight={"400"}>
           = Your Own Live Session in 30 minutes
         </Text>
-        <Button w="60%" borderRadius={"3xl"} bg="#ffde00">
+        <Button w="60%" borderRadius={"3xl"} bg="#ffde00" fontSize={"18px"} fontWeight={"700"} textTransform={"uppercase"}>
           30 Minutes Schedule Now
         </Button>
       </Box>

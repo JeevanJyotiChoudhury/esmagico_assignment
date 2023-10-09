@@ -13,28 +13,37 @@ import thirdImg from "../assets/1 7.png";
 import fourthImg from "../assets/1530217060-8738 1.png";
 import fifthImg from "../assets/5 1.png";
 import imageDot from "../assets/Group 1047.png";
-import imageHover from "../assets/Rectangle 97.png"
+import imageHover1 from "../assets/Rectangle 96.png"
+import imageHover2 from "../assets/Rectangle 97.png"
+import imageHover3 from "../assets/Rectangle 98.png"
+import imageHover4 from "../assets/Rectangle 99.png"
+import imageHover5 from "../assets/Rectangle 100.png"
 
 const dataArray = [
   {
     img: firstImg,
     desc: "Leadership and Executive coach",
+    imageHover:imageHover1
   },
   {
     img: secondImg,
     desc: "Change Management and Reboot Training",
+    imageHover:imageHover2
   },
   {
     img: thirdImg,
     desc: "Employee Motivation and Engagement",
+    imageHover:imageHover2
   },
   {
     img: fourthImg,
     desc: "Employee Upskill Sessions",
+    imageHover:imageHover4
   },
   {
     img: fifthImg,
     desc: "Soft skills Training",
+    imageHover:imageHover5
   },
 ];
 const LearningSession = () => {
@@ -45,9 +54,9 @@ const LearningSession = () => {
           <Button bg="#ff8e4f" color="white">
             Trending
           </Button>
-          <Heading as="h3" size="lg">
+          <Text fontSize={"18px"} fontWeight={"600"}>
             Live Learning Sessions
-          </Heading>
+          </Text>
         </Box>
         <SimpleGrid columns={{sm:'2',md:'3',xl:'5'}} mt="10" gap="7">
           {dataArray.map((elem) => {
@@ -57,14 +66,14 @@ const LearningSession = () => {
                   <Image src={elem.img} w="100%" />
                   <Image src={imageDot} position="absolute" top="2" left="2" />
                   <Image
-                    src={imageHover}
+                    src={elem.imageHover}
                     top="0"
                     left="0"
                     w="100%"
                     position="absolute"
                   />
                 </Box>
-                <Text p="4" color="#606060" fontSize="md">
+                <Text p="4" color="#606060" fontSize="15px" fontWeight={"500"}>
                   {elem.desc}
                 </Text>
               </Box>

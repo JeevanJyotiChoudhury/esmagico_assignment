@@ -36,10 +36,11 @@ const LargestNetwork = () => {
             </Button>
           )}
           <Text
-            fontSize={{ sm: "2xl", lg: "5xl" }}
+            fontSize={{ sm: "2xl", lg: "46px" }}
             fontWeight="bold"
-            w={{ base: "100%", md: "40%", sm: "30%" }}
-            mt={{ base: "4", md: "-16" }}
+            w={{ base: "100%", md: "55%", sm: "30%" }}
+            mt={{ base: "4", md: "-96" }}
+            style={{fontFamily:"Poppins"}}
           >
             Grow with India’s Largest Network of Experts
           </Text>

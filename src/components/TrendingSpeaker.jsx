@@ -51,24 +51,18 @@ const TrendingSpeaker = () => {
     <Box py="20" mb="6">
       <Box w={"80%"} mx={"auto"} h={"100%"} px={"2"}>
         <Box>
-          <Heading as="h4" size="xl" textAlign="center">
+          <Text fontSize="32px" fontWeight="600" textAlign="center">
             Trending Speakers
-          </Heading>
+          </Text>
         </Box>
-        <SimpleGrid columns={{base:1,md:2,xl:5}} mt="10" gap="3">
+        <SimpleGrid columns={{ base: 1, md: 2, xl: 5 }} mt="10" gap="3">
           {dataArray.map((elem) => {
             return (
               <Box borderRadius="xl">
                 <Box borderRadius="xl" overflow="hidden" position="relative">
                   <Image src={elem.img} w="100%" h="80%" />
                   <Image src={imageDot} position="absolute" top="2" right="2" />
-                  {/* <Image
-                    src={imageHover}
-                    top="0"
-                    left="0"
-                    w="100%"
-                    position="absolute"
-                  /> */}
+                  
                   <Box
                     position="absolute"
                     bottom="0"
@@ -76,15 +70,15 @@ const TrendingSpeaker = () => {
                     color="white"
                     w="100%"
                     textAlign="center"
-                    py="1"
+                    py="3"
                   >
-                    <Text px="4" fontSize="md" mb="1.5">
+                    <Text px="4" fontSize="10" mb="1.5" fontWeight={"600"}>
                       {elem.name}
                     </Text>
-                    <Text px="4" fontSize="xs">
+                    <Text px="4" fontSize="8px" fontWeight={"400"}>
                       {elem.d1}
                     </Text>
-                    <Text px="4" fontSize="xs">
+                    <Text px="4" fontSize="8px" fontWeight={"400"}>
                       {elem.d2}
                     </Text>
                   </Box>

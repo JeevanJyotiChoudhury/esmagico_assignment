@@ -3,11 +3,20 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const theme = extendTheme({
+  fonts: {
+    body: "Poppins, sans-serif",
+    heading: "Poppins, sans-serif",
+    // You can add more styles as needed
+  },
+});  
+
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <App />
   </ChakraProvider>
 );

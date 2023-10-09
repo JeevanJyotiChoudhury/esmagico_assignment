@@ -25,12 +25,12 @@ const AboutSpeakin = () => {
             backgroundPosition="center"
             h="60vh"
           >
-            <Image src={mic} w="20%"  position="absolute" bottom="1.5" left="60"/>
+            <Image src={mic} w="20%"  position="absolute" bottom="6" left="52"/>
             {/* <Image src={mic} /> */}
           </Box>
-          <Box w="40%" mt="8%" pl="24">
-            <Text fontWeight="semibold" fontSize="5xl" my="5">About SpeakIn</Text>
-            <Text fontSize="lg" w="90%">
+          <Box w="40%" mt="4%" pl="24">
+            <Text fontWeight="600" fontSize="32px" my="5">About SpeakIn</Text>
+            <Text fontSize="18px" w="90%" fontWeight={"400"}>
               SpeakIn is Asia's largest on-demand network providing access to
               top regional speakers, thought leaders and their content. Enabling
               organizations to build performance agility and win over
