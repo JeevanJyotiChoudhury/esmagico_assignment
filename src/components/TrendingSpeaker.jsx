@@ -51,7 +51,11 @@ const TrendingSpeaker = () => {
     <Box py="20" mb="6">
       <Box w={"80%"} mx={"auto"} h={"100%"} px={"2"}>
         <Box>
-          <Text fontSize="32px" fontWeight="600" textAlign="center">
+          <Text
+            fontSize={{ md: "32px", base: "16px" }}
+            fontWeight="600"
+            textAlign="center"
+          >
             Trending Speakers
           </Text>
         </Box>
@@ -62,7 +66,7 @@ const TrendingSpeaker = () => {
                 <Box borderRadius="xl" overflow="hidden" position="relative">
                   <Image src={elem.img} w="100%" h="80%" />
                   <Image src={imageDot} position="absolute" top="2" right="2" />
-                  
+
                   <Box
                     position="absolute"
                     bottom="0"
@@ -72,13 +76,13 @@ const TrendingSpeaker = () => {
                     textAlign="center"
                     py="3"
                   >
-                    <Text px="4" fontSize="10" mb="1.5" fontWeight={"600"}>
+                    <Text px="4" fontSize="10px" mb="1.5" fontWeight={"600"}>
                       {elem.name}
                     </Text>
-                    <Text px="4" fontSize="8px" fontWeight={"400"}>
+                    <Text px="4" fontSize={{ md: "8px",base:"6px" }} fontWeight={"400"}>
                       {elem.d1}
                     </Text>
-                    <Text px="4" fontSize="8px" fontWeight={"400"}>
+                    <Text px="4" fontSize={{ md: "8px",base:"6px" }} fontWeight={"400"}>
                       {elem.d2}
                     </Text>
                   </Box>

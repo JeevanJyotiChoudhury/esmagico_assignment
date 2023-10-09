@@ -29,16 +29,16 @@ const arrData = [
 
 const OwnSession = () => {
   return (
-    <Box w={{ sm: "90%", md: "70%", xl: "55%" }} mx="auto" mb="20" mt="28">
+    <Box w={{ base: "90%", md: "70%", xl: "55%" }} mx="auto" mb="20" mt="28">
       <Heading
         pl="8"
         w="80%"
-        fontSize={{ sm: "4xl", lg: "46px" }}
+        fontSize={{ base: "16px", lg: "46px" }}
         fontWeight={"600"}
       >
         Why Curate Your Own Sessions?
       </Heading>
-      <SimpleGrid columns={{ sm: 1, md: 2 }}>
+      <SimpleGrid columns={{ base: 1, md: 2 }}>
         <Box p="12">
           <Image src={bgImg} />
         </Box>
@@ -50,7 +50,7 @@ const OwnSession = () => {
                   <Image src={elem.img} />
                 </Box>
                 <Box w="90%" px="4">
-                  <Text fontSize="18px" fontWeight={"400"}>
+                  <Text fontSize={{ base:"12px",md: "18px" }} fontWeight={"400"}>
                     {elem.desc}
                   </Text>
                 </Box>

@@ -49,14 +49,22 @@ const RealPeople = () => {
       >
         <SimpleGrid columns={{ base: 1, lg: "2" }}>
           <Box color="white" pl={{ base: "4", lg: "16" }} mt="15%">
-            <Text fontSize="42px" fontWeight="600" mb="-4">
+            <Text
+              fontSize={{ sm: "24px", md: "42px" }}
+              fontWeight="600"
+              mb="-4"
+            >
               Real People
             </Text>
-            <Text fontSize="42px" fontWeight="600">
+            <Text
+              fontSize={{ sm: "24px", md: "42px" }}
+              fontWeight="600"
+              mt={{ base: "4", md: "0" }}
+            >
               {" "}
               Real Learnning
             </Text>
-            <Text pr="20" fontSize="18px" fontWeight="400">
+            <Text pr="20" fontSize={{ md: "18px",base:"12px" }} fontWeight="400">
               SpeakIn is Asia's largest on-demand network providing access to
               top regional speakers.
             </Text>
@@ -76,8 +84,7 @@ const RealPeople = () => {
                       color="white"
                       px="12"
                       fontWeight="500"
-                      fontSize="20px"
-                      
+                      fontSize={{ md: "20px", base: "12px" }}
                     >
                       Dr. Muhammad Yunis, Nobel Laureate and conomist
                     </Text>

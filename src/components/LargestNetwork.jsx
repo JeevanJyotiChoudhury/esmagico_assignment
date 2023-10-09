@@ -36,9 +36,9 @@ const LargestNetwork = () => {
             </Button>
           )}
           <Text
-            fontSize={{ sm: "2xl", lg: "46px" }}
+            fontSize={{ base: "16px", lg: "46px" }}
             fontWeight="bold"
-            w={{ base: "100%", md: "55%", sm: "30%" }}
+            w={{ base: "100%", md: "55%", base: "30%" }}
             mt={{ base: "4", md: "-96" }}
             style={{fontFamily:"Poppins"}}
           >

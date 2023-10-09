@@ -11,12 +11,12 @@ const Clients = () => {
         mx="auto"
       >
         <Box>
-          <Text fontSize="32px" fontWeight="600">
+          <Text fontSize={{ md: "32px", base: "16px" }} fontWeight="600">
             Your SpeakIn is Trusted by the Best of Clients
           </Text>
         </Box>
         <Box>
-          <Text mt="6" fontSize="14px" fontWeight="400">
+          <Text mt="6" fontSize={{ md: "14px", base: "12px" }} fontWeight="400">
             SpeakIn speakers have enthralled audiences across top-of-the-line
             businesses in varied sectors globally.
           </Text>

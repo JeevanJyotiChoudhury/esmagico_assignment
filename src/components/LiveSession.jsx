@@ -26,9 +26,9 @@ const dataArray = [
 
 const LiveSession = () => {
   return (
-    <Box w="55%" mx="auto" textAlign="center" mb="20">
+    <Box w={{ md: "55%", base: "85%" }} mx="auto" textAlign="center" mb="20">
       <Flex
-        fontSize={{ base: "md", sm: "xl", lg: "36px" }}
+        fontSize={{ base: "md", base: "16px", lg: "36px" }}
         fontWeight="500"
         justify="center"
         pt="10"
@@ -40,14 +40,23 @@ const LiveSession = () => {
         </span>
         Work?
       </Flex>
-      <SimpleGrid columns={{ sm: "2", md: "2", xl: "4" }} gap="9">
+      <SimpleGrid
+        columns={{ base: "2", md: "4" }}
+        gap={{ md: "9", base: "2" }}
+      >
         {dataArray.map((el) => {
           return (
             <Box shadow="2xl" borderRadius="lg">
               <Flex justify="center" align="center" pt="9" pb="5">
                 <Image src={el.img} />
               </Flex>
-              <Text pb="5" mx="6" fontSize={"16px"} fontWeight={"500"} textAlign={"center"}>
+              <Text
+                pb="5"
+                mx="6"
+                fontSize={{ base: "12px", md: "16px" }}
+                fontWeight={"500"}
+                textAlign={"center"}
+              >
                 {el.desc}
               </Text>
             </Box>
