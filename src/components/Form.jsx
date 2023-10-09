@@ -18,7 +18,7 @@ const Form = () => {
     <Box>
       <Box
         p="8"
-        w="70%"
+        w={{sm:"95%",md:"70%"}}
         mx="auto"
         shadow="lg"
         borderRadius="20px"

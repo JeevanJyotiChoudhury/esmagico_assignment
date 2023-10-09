@@ -15,8 +15,12 @@ const Banner = () => {
       <Image src={banner1} w="100%" position="absolute" bottom="-56" />
       <Image src={banner3} w="100%" position="absolute" bottom="-72" />
       <Image src={banner2} w="100%" position="absolute" bottom="-52" />
-      <Box width="35%" position={"absolute"} right={"15%"} top="20%">
-        <Text color="white" fontSize={"5xl"} fontWeight={"bold"}>
+      <Box width="35%" position={"absolute"} right={"15%"} top="10%">
+        <Text
+          color="white"
+          fontSize={{ sm: "xl", md: "5xl" }}
+          fontWeight={"bold"}
+        >
           Curate Your own Training Sessions with top Keynote Speakers
         </Text>
       </Box>
@@ -24,8 +28,8 @@ const Banner = () => {
         width="35%"
         position={"absolute"}
         right={"15%"}
-        top="45%"
-        pl="12"
+        top="35%"
+        pl={{sm:"-5",md:"12"}}
         py="10"
         borderRadius={"3xl"}
         bg="whiteAlpha.100"
@@ -35,7 +39,7 @@ const Banner = () => {
           <Image src={plus} width="7%" h="2%" />
           <Image src={zoom} />
         </Flex>
-        <Text color="white" fontSize={"2xl"} my="4">
+        <Text color="white" fontSize={{ sm: "sm", md: "2xl" }} my={{base:"0",md:"4"}}>
           = Your Own Live Session in 30 minutes
         </Text>
         <Button w="60%" borderRadius={"3xl"} bg="#ffde00">

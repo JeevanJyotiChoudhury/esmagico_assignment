@@ -1,28 +1,58 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Flex, Image, Text, Button, useBreakpointValue } from "@chakra-ui/react";
+import React, { useState } from "react";
 import Form from "./Form";
-import handshake from "../assets/istockphoto-1146425090-612x612_1-removebg-preview.png"
-import waterBg from "../assets/Ellipse 24.png"
-import waterBg1 from "../assets/Ellipse 25watermark.png"
+import handshake from "../assets/istockphoto-1146425090-612x612_1-removebg-preview.png";
+import waterBg from "../assets/Ellipse 24.png";
+import waterBg1 from "../assets/Ellipse 25watermark.png";
 
 const LargestNetwork = () => {
+  const [isFormVisible, setFormVisible] = useState(false);
+
+  const toggleFormVisibility = () => {
+    setFormVisible(!isFormVisible);
+  };
+
   return (
     <Box mt="80">
-      <Flex>
-        <Box w="50%">
-          <Form />
+      <Flex direction={{ base: "column", md: "row" }}>
+        <Box w={{ base: "100%", md: "50%" }}>
+          {useBreakpointValue({ base: false, md: true }) && <Form />}
         </Box>
-        <Flex w="50%" justify="space-between">
-          <Text fontSize="5xl" fontWeight="bold" w="50%" mt="-16">
+        <Flex
+          w={{ base: "100%", md: "50%" }}
+          justify="space-between"
+          align={{ base: "flex-start", md: "center" }}
+        >
+          {useBreakpointValue({ base: true, md: false }) && (
+            <Button
+              onClick={toggleFormVisibility}
+              bg="#538dd7"
+              color="white"
+              mt={{ base: "4", md: "0" }}
+              fontSize={"sm"}
+              alignSelf={{ base: "flex-start", md: "auto" }}
+            >
+              {isFormVisible ? "Close Form" : "Register"}
+            </Button>
+          )}
+          <Text
+            fontSize={{ sm: "2xl", lg: "5xl" }}
+            fontWeight="bold"
+            w={{ base: "100%", md: "40%", sm: "30%" }}
+            mt={{ base: "4", md: "-16" }}
+          >
             Grow with India’s Largest Network of Experts
           </Text>
           <Box position="relative">
-            <Image src={waterBg} position="absolute" top="-24"  />
-            <Image src={waterBg1} position="absolute" top="-24"  />
+            <Image src={waterBg} position="absolute" top="-24" />
+            <Image src={waterBg1} position="absolute" top="-24" />
             <Image src={handshake} position="relative" />
           </Box>
         </Flex>
       </Flex>
+      {useBreakpointValue({ base: true, md: false }) && isFormVisible && (
+        <Form />
+      )}
     </Box>
   );
 };

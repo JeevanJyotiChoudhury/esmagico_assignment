@@ -30,7 +30,7 @@ const arrData = [
 const OwnSession = () => {
   return (
     <Box w={{ sm: "90%", md: "70%" ,xl:"50%"}} mx="auto" mb="20" mt="28">
-      <Heading pl="8" w="70%" fontSize="5xl">
+      <Heading pl="8" w="70%" fontSize={{sm:"4xl",lg:"5xl"}}>
         Why Curate Your Own Sessions?
       </Heading>
       <SimpleGrid columns={{ sm: 1, md: 2 }}>
